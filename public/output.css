@@ -179,6 +179,12 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink {
+    flex-shrink: 1;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -238,6 +244,18 @@
   }
   .font-mono {
     font-family: var(--font-mono);
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .text-\[200px\] {
     font-size: 200px;
@@ -331,6 +349,16 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:text-\[20px\] {
+    @media (width >= 48rem) {
+      font-size: 20px;
+    }
+  }
+  .md\:text-\[200px\] {
+    @media (width >= 48rem) {
+      font-size: 200px;
     }
   }
 }
